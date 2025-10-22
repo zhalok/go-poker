@@ -17,5 +17,15 @@ This is a simple **Go Poker CLI application** that can evaluate poker hands. It 
 ### 1. Build and start the container (detached mode)
 
 ```bash
-docker compose down
 docker compose up -d --build
+```
+
+### 2. Run the game in interactive mode
+```bash
+docker exec -it go-poker ./main
+``` 
+
+### 3. Stop and remove the containers to keep things clean
+```bash
+docker compose down
+```
