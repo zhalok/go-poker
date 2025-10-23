@@ -40,9 +40,8 @@ func BuildCounterFreqArray(inputString string) []int {
 
 func BuilPokerSymbolOrderMap() map[rune]int {
 	pokerSymbolOrderMap := make(map[rune]int, 0)
-	totalPokerSymbols := len(POKER_SYMBOL_ORDER)
 	for idx, ch := range POKER_SYMBOL_ORDER {
-		pokerSymbolOrderMap[ch] = (totalPokerSymbols - idx)
+		pokerSymbolOrderMap[ch] = idx
 	}
 
 	return pokerSymbolOrderMap
